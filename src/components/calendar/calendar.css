@@ -1,0 +1,231 @@
+
+body {
+    background-color: rgba(244,244,244);
+}
+
+#carousel {
+    position: absolute;
+    height: 100px;
+    width: 700px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    background-color: #f7f8f9;
+    text-align: center;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: #228291;
+    margin-top: 0;
+    z-index: 1000;
+    margin-left: -30px;
+    line-height: 100px;
+}
+
+.arrow-right {
+    left: 730px;
+}
+.arrow img{
+    width: 20px;
+}
+.arrow-left img{
+    transform: rotate(180deg);
+}
+.item {
+    text-align: center;
+    color: rgb(90,92,101);
+    font-size: 20px;
+    position: absolute;
+    background: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.item span{ display: block; line-height: 25px;text-transform: capitalize}
+.level-3 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #6796E5;
+    left: 600px;
+    margin-top: 0;
+}
+
+.level-2 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #228291;
+    left: 500px;
+    margin-top: 0;
+}
+
+.level-1 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #6796E5;
+    left: 400px;
+    margin-top: 0;
+}
+
+.level0 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: rgb(105,151,255) !important;
+    left: 300px;
+    color: #fff;
+}
+
+.level1 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #6796E5;
+    margin-top: 0;
+    left: 200px;
+}
+
+.level2 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #228291;
+    margin-top: 0;
+    left: 100px;
+}
+
+.level3 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #228291;
+    margin-top: 0;
+    left: 0;
+}
+
+.left-enter {
+    opacity: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-top: 0;
+}
+
+.left-enter.left-enter-active {
+    opacity: 1;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-top: 0;
+    transition: left 1s, opacity 1s;
+}
+
+.left-leave {
+    opacity: 1;
+    left: 600px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-top: 0;
+}
+
+.left-leave.left-leave-active {
+    left: 600px;
+    opacity: 0;
+    height: 100px;
+    line-height: 100px;
+    margin-top: 0;
+    width: 100px;
+    transition: left 1s, opacity 1s;
+}
+
+.right-enter {
+    opacity: 0;
+    left: 600px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-top: 0;
+}
+
+.right-enter.right-enter-active {
+    left: 600px;
+    opacity: 1;
+    height: 100px;
+    margin-top: 0;
+    line-height: 100px;
+    width: 100px;
+    transition: left 1s, opacity 1s;
+}
+
+.right-leave {
+    left: 0;
+    height: 100px;
+    opacity: 1;
+    margin-top: 0;
+    line-height: 100px;
+    width: 100px;
+}
+
+.right-leave.right-leave-active {
+    left: 0;
+    opacity: 0;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-top: 0;
+    transition: left 1s, opacity 1s;
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.item.disable{
+    background: #fff !important;
+    color: rgb(217,217,220);
+    cursor: not-allowed;
+}
+
+.calender {
+    width: 100%; float: left; display: flex; justify-content: center; margin-top: 25px;
+}
+.years{
+    width: 200px;
+    float: left;
+    text-align: center;
+    background: #fff;
+    line-height: 30px;
+    margin: 0 10px;
+    color: #aaa;
+}
+.years .left {
+    float: left;
+    width: 25px;
+    color: #aaa;
+    background: #f7f8f9;
+}
+.years .right {
+    float: right;
+    width: 25px;
+    color: #aaa;
+    background: #f7f8f9;
+}
